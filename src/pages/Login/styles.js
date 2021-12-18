@@ -66,18 +66,8 @@ export const Login_register = styled.div`
 
     >form{
         width: 500px;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 80px auto 0 auto;
-
-        >input{
-            width: 450px;
-            height: 40px;
-            border-radius: 5px;
-            border: solid 1px var(--primary);
-            padding: 10px;
-            margin: 10px;
-        }
+        margin: 30px auto 0 auto;
+        
 
         button {
         width: 150px;
@@ -101,12 +91,21 @@ export const Login_register = styled.div`
     }
 }`;
 
+export const Link = styled.div`
+    width: inherit;
+    color: #00BFA6;
+    text-align: end;
+    font-weight: bold;
+`;
+
+
 export const BtnsLogin = styled.div`
     display: flex;
-    margin: 40px;
+    margin: 40px 0px 40px 80px;
+    gap: 20px;
     text-align: center;
 
-`
+`;
 
 export const Icons = styled.div`
     width: 42px;
@@ -115,8 +114,18 @@ export const Icons = styled.div`
     display: flex;
     margin-left: 20px;
     gap: 20px;
+    cursor: pointer;
+`;
 
+export const Registro = styled.div`
+    text-align: end;
+    font-weight: bold;
 
+>a{
+    padding-right: 15px;
+    color: #00BFA6;
+    font-size: 20px;
+}
 `;
 
 
