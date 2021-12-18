@@ -99,8 +99,27 @@ export const Login_register = styled.div`
             transform: scale(0.95);
         }
     }
-    }
+}`;
+
+export const BtnsLogin = styled.div`
+    display: flex;
+    margin: 40px;
+    text-align: center;
+
+`
+
+export const Icons = styled.div`
+    width: 42px;
+    height: 42px;
+    border-radius: 90px;
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+
+
 `;
+
+
 
 
 

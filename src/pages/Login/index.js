@@ -1,5 +1,8 @@
-import { Container, Image_welcome, Login_register, logo_title } from "./styles";
+import { BtnsLogin, Container, Icons, Image_welcome, Login_register, logo_title } from "./styles";
 import password_image from "../../assets/login/password.svg";
+import icon_facebook from "../../assets/login/facebook.png";
+import icon_google from "../../assets/login/google.png"
+import Input from "../../components/Input"
 import burguer from "../../assets/login/burger.png";
 
 
@@ -24,7 +27,7 @@ function Login() {
 
                 </div>
                 <form>
-                    <input
+                    <Input
                         label="Informe o seu E-mail"
                         placeholder="E-mail"
                         colorLabel="white"
@@ -32,7 +35,7 @@ function Login() {
                         autocomplete="off"
                     />
 
-                    <input
+                    <Input
                         label="Informe sua senha"
                         type="password"
                         id="password"
@@ -41,12 +44,22 @@ function Login() {
                         colorLabel="white"
                     />
 
-                    {/* <div id="ForgotPassword" >
-                            <p>Esqueceu a senha?</p> 
-                        </div> */}
-                    <div id="btnSubmit">
-                        <button>Login</button>
+                    <div id="ForgotPassword" >
+                        <a href="" >Esqueceu a senha?</a>
                     </div>
+
+                    <BtnsLogin>
+                        <div id="btnSubmit">
+                            <button>Login</button>
+                        </div>
+
+                        <p>ou</p>
+                        <Icons>
+                            <img src={icon_facebook} />
+                            <img src={icon_google} />
+                        </Icons>
+                    </BtnsLogin>
+
                 </form>
 
             </Login_register>
